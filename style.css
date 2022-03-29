@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header{
+  padding-top: 100px;
+}
+
+h1{
+
+  font-size: 24px;
+  width: 400px;
+  height: 50px;
+  padding: 10px 5px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(29, 69, 201,0.6);
+  color: rgb(236, 250, 255);
+  margin: 0 auto ;
+  text-align: center;
+  border-radius: 10px;
+}
+
+body {
+  padding: 0;
+  background-image: url('./img/bckgnd-img.png');
+  background-size: cover;
+ 
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 85px);
+}
+
+button {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #26afaf;
+}
+
+.equ-button {
+  grid-row: span 2;
+  color: #f8faf4;
+  background-color: rgba(33, 22, 189, 0.6);
+}
+.num {
+  background-color: rgba(73, 129, 151, 0.8);
+  color: white;
+}
+.opr{
+  background-color: rgba(29, 69, 201,0.6);
+  color: white;
+}
+.AC{
+  background-color: rgba(43, 37, 33, 0.6);
+  color: white;
+}
+
+.display{
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  min-height: 150px;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 10px 0px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  border: 1px solid white;
+}
+
+.display .prev-operand{
+  color: rgba(255,255, 255, 0.75);
+  font-size: 26px;
+}
+
+.display .crnt-operand{
+  color: white;
+  font-size: 45px;
+}

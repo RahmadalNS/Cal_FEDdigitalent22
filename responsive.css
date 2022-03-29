@@ -1,0 +1,33 @@
+@media  (max-width: 1000px) {
+    header{
+        padding-top: 150px;
+    }
+
+    header h1{
+        width: 80%;
+        height: auto; 
+    }
+    
+    .calculator-grid {
+        grid-template-columns: repeat(4, 20%);
+        grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    }
+    
+}
+    
+    
+@media  (max-width: 670px) {
+ 
+    header h1{
+        font-size: 19px;
+        width: 100%;
+        height: auto;
+        padding: 10px 2px;   
+    }
+    
+    .calculator-grid {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    }
+    
+}
