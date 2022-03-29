@@ -11,17 +11,17 @@
 }
 
 header{
-  padding-top: 100px;
+  padding-top: 10px;
 }
 
 h1{
 
-  font-size: 24px;
-  width: 400px;
+  font-size: 20px;
+  width: 340px;
   height: 50px;
   padding: 10px 5px;
   border: 1px solid rgb(255, 255, 255);
-  background-color: rgba(29, 69, 201,0.6);
+  background-color: rgba(26, 20, 110, 0.6);
   color: rgb(236, 250, 255);
   margin: 0 auto ;
   text-align: center;
@@ -39,8 +39,8 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: minmax(100px, auto) repeat(5, 85px);
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 70px);
 }
 
 button {
@@ -48,29 +48,26 @@ button {
   font-size: 24px;
   font-weight: bold;
   border-radius: 10px;
+  color: white;
 }
 
 button:hover {
   background-color: #26afaf;
 }
 
-.equ-button {
-  grid-row: span 2;
-  color: #f8faf4;
-  background-color: rgba(33, 22, 189, 0.6);
+.equ-button, .AC {
+ 
+  background-color: rgba(26, 20, 110, 0.6);
 }
 .num {
   background-color: rgba(73, 129, 151, 0.8);
-  color: white;
+  
 }
 .opr{
   background-color: rgba(29, 69, 201,0.6);
-  color: white;
+  
 }
-.AC{
-  background-color: rgba(43, 37, 33, 0.6);
-  color: white;
-}
+
 
 .display{
   grid-column: 1 / -1;
