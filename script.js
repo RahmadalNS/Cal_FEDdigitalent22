@@ -49,7 +49,10 @@ class Cal {
         computation = prev / crnt
         break
       case '%':
-        computation = prev % crnt
+          computation = prev % crnt
+          break
+      case '^':
+        computation = prev ** crnt
         break
       default:
         return
