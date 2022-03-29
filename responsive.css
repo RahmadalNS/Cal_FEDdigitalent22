@@ -28,6 +28,7 @@
     .calculator-grid {
         grid-template-columns: repeat(4, 25%);
         grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+        padding-bottom: 60px;
     }
     
 }
