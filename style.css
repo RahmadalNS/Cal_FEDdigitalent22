@@ -30,7 +30,7 @@ h1{
 
 body {
   padding: 0;
-  background-image: url('bckgnd-img.png');
+  background-image: url(bckgnd-img.png);
   background-size: cover;
  
 }
